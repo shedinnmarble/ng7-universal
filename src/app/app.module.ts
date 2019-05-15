@@ -1,5 +1,5 @@
 import { NgModule }       from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
+import { BrowserModule, TransferState }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
@@ -19,6 +19,10 @@ import { MessagesComponent }    from './messages/messages.component';
 
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { ServerTransferStateModule } from '@angular/platform-server';
+import { CustomersModule } from './customers/customers.module';
+import { CustomerService } from './core/customer.service';
+import { CustomersComponent } from './customers/customers.component';
 
 
 @NgModule({
@@ -27,9 +31,11 @@ import { isPlatformBrowser } from '@angular/common';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, { dataEncapsulation: false }
-    )
+    ServerTransferStateModule,
+    // CustomersModule,
+    // HttpClientInMemoryWebApiModule.forRoot(
+    //   InMemoryDataService, { dataEncapsulation: false }
+    // )
   ],
   declarations: [
     AppComponent,
@@ -37,9 +43,10 @@ import { isPlatformBrowser } from '@angular/common';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    CustomersComponent
   ],
-  providers: [ HeroService, MessageService ],
+  providers: [ HeroService, MessageService, CustomerService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

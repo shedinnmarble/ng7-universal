@@ -7,7 +7,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 import { Hero } from './hero';
 import { MessageService } from './message.service';
-import { TransferState } from '@angular/platform-browser';
+
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -21,7 +21,6 @@ export class HeroService {
   constructor(
     private http: HttpClient,
     private messageService: MessageService,
-    private transferState: TransferState,
     @Optional() @Inject(APP_BASE_HREF) origin: string) {
       this.heroesUrl = `${origin}${this.heroesUrl}`;
     }
