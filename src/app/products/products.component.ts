@@ -1,7 +1,6 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
 import { ProductsService } from '../services/products.service';
 import { tap, takeWhile } from 'rxjs/operators';
-import { ChangeDetectionStrategy } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-products',
