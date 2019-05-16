@@ -32,25 +32,8 @@ export class ProductsComponent implements OnInit, OnDestroy {
     );
   }
 
-  updateProducts() {
-    const newProducts = [
-      {
-        'name': 'Plexus Slim' + this.index,
-        'desc': 'I\'m a good product'
-      },
-      {
-        'name': 'Plexus MetaBurn' + this.index,
-        'desc': 'I\'m a good product'
-      },
-      {
-        'name': 'Plexus Lean' + this.index,
-        'desc': 'I\'m a good product'
-      }
-    ];
-    this.productsService.updateProducts(newProducts);
-  }
   ngOnDestroy() {
-    this.isComponentAlive = false;
+    // this.isComponentAlive = false;
   }
 
 

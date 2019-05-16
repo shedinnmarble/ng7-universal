@@ -13,7 +13,7 @@ export class CustomersComponent implements OnInit, OnChanges {
 
   constructor(private customerService: CustomerService, private productsService: ProductsService) {}
   customers$: any;
-  index = 1;
+  // index = 1;
   ngOnInit() {
     this.customers$ =  this.getList();
   }
@@ -23,15 +23,15 @@ export class CustomersComponent implements OnInit, OnChanges {
   updateProducts() {
     const newProducts = [
       {
-        'name': 'Plexus Slim' + this.index,
+        'name': 'Plexus Slim' + new Date(),
         'desc': 'I\'m a good product'
       },
       {
-        'name': 'Plexus MetaBurn' + this.index,
+        'name': 'Plexus MetaBurn' + new Date(),
         'desc': 'I\'m a good product'
       },
       {
-        'name': 'Plexus Lean' + this.index,
+        'name': 'Plexus Lean' + new Date(),
         'desc': 'I\'m a good product'
       }
     ];
