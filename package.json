@@ -8,11 +8,12 @@
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
+    "serve": "npm run build:ssr && npm run serve:ssr",
     "lint": "tslint ./src/**/*.ts -t verbose --fix",
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "nodemon dist/server.js",
-    "build:client-and-server-bundles": "ng build && ng run angular.io-example:server",
+    "build:client-and-server-bundles": "ng build --aot --prod && ng run angular.io-example:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "keywords": [],
