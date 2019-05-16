@@ -1,6 +1,7 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { CustomerService } from '../core/customer.service';
+import { Component, OnInit, ChangeDetectionStrategy, OnChanges } from '@angular/core';
 import { tap } from 'rxjs/operators';
+import { ProductsService } from '../services/products.service';
+import { CustomerService } from '../services/customer.service';
 
 @Component({
   selector: 'app-customers',
@@ -8,21 +9,36 @@ import { tap } from 'rxjs/operators';
   styleUrls: ['./customers.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CustomersComponent implements OnInit {
+export class CustomersComponent implements OnInit, OnChanges {
 
-  constructor(private customerService: CustomerService) {}
-  customers: any;
+  constructor(private customerService: CustomerService, private productsService: ProductsService) {}
+  customers$: any;
+  index = 1;
   ngOnInit() {
-    this.getList().subscribe(c =>{
-      this.customers = c;
-    })
+    this.customers$ =  this.getList();
   }
   getList() {
-
-    return this.customerService.getList().pipe(
-      tap(x => {
-      console.log(">>>>>>>>>>>>>>xxx", x)
-    }))
+    return this.customerService.getList();
+  }
+  updateProducts() {
+    const newProducts = [
+      {
+        'name': 'Plexus Slim' + this.index,
+        'desc': 'I\'m a good product'
+      },
+      {
+        'name': 'Plexus MetaBurn' + this.index,
+        'desc': 'I\'m a good product'
+      },
+      {
+        'name': 'Plexus Lean' + this.index,
+        'desc': 'I\'m a good product'
+      }
+    ];
+    this.productsService.updateProducts(newProducts);
+  }
+  ngOnChanges(value) {
+    console.log('>>changes', value);
   }
 
 }

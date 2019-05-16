@@ -4,7 +4,7 @@ import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+// import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -21,8 +21,10 @@ import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ServerTransferStateModule } from '@angular/platform-server';
 import { CustomersModule } from './customers/customers.module';
-import { CustomerService } from './core/customer.service';
+import { CustomerService } from './services/customer.service';
 import { CustomersComponent } from './customers/customers.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductsService } from './services/products.service';
 
 
 @NgModule({
@@ -44,9 +46,10 @@ import { CustomersComponent } from './customers/customers.component';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    CustomersComponent
+    CustomersComponent,
+    ProductsComponent
   ],
-  providers: [ HeroService, MessageService, CustomerService ],
+  providers: [ HeroService, MessageService, CustomerService, ProductsService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

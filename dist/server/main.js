@@ -130,16 +130,15 @@ exports.ɵEmptyOutletComponentNgFactory = ɵEmptyOutletComponentNgFactory;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var dashboard_component_1 = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
-var heroes_component_1 = __webpack_require__(/*! ./heroes/heroes.component */ "./src/app/heroes/heroes.component.ts");
-var hero_detail_component_1 = __webpack_require__(/*! ./hero-detail/hero-detail.component */ "./src/app/hero-detail/hero-detail.component.ts");
 var customers_component_1 = __webpack_require__(/*! ./customers/customers.component */ "./src/app/customers/customers.component.ts");
+var products_component_1 = __webpack_require__(/*! ./products/products.component */ "./src/app/products/products.component.ts");
 var routes = [
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
-    { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent },
-    { path: 'heroes', component: heroes_component_1.HeroesComponent },
-    { path: 'customers', component: customers_component_1.CustomersComponent }
+    { path: '', redirectTo: '/customers', pathMatch: 'full' },
+    // { path: 'dashboard', component: DashboardComponent },
+    // { path: 'detail/:id', component: HeroDetailComponent },
+    // { path: 'heroes', component: HeroesComponent },
+    { path: 'customers', component: customers_component_1.CustomersComponent },
+    { path: 'products', component: products_component_1.ProductsComponent }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -200,13 +199,13 @@ var i7 = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts"
 var styles_AppComponent = [i0.styles];
 var RenderType_AppComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_AppComponent, data: {} });
 exports.RenderType_AppComponent = RenderType_AppComponent;
-function View_AppComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""])), (_l()(), i1.ɵeld(2, 0, null, null, 6, "nav", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "a", [["routerLink", "/dashboard"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+function View_AppComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, ["", ""])), (_l()(), i1.ɵeld(2, 0, null, null, 6, "nav", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "a", [["routerLink", "/products"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 4).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(4, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Dashboard"])), (_l()(), i1.ɵeld(6, 0, null, null, 2, "a", [["routerLink", "/heroes"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+    } return ad; }, null, null)), i1.ɵdid(4, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Products"])), (_l()(), i1.ɵeld(6, 0, null, null, 2, "a", [["routerLink", "/customers"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 7).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(7, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Heroes"])), (_l()(), i1.ɵeld(9, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(10, 212992, null, 0, i2.RouterOutlet, [i2.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null), (_l()(), i1.ɵeld(11, 0, null, null, 1, "app-messages", [], null, null, null, i4.View_MessagesComponent_0, i4.RenderType_MessagesComponent)), i1.ɵdid(12, 114688, null, 0, i5.MessagesComponent, [i6.MessageService], null, null)], function (_ck, _v) { var currVal_3 = "/dashboard"; _ck(_v, 4, 0, currVal_3); var currVal_6 = "/heroes"; _ck(_v, 7, 0, currVal_6); _ck(_v, 10, 0); _ck(_v, 12, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.title; _ck(_v, 1, 0, currVal_0); var currVal_1 = i1.ɵnov(_v, 4).target; var currVal_2 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_1, currVal_2); var currVal_4 = i1.ɵnov(_v, 7).target; var currVal_5 = i1.ɵnov(_v, 7).href; _ck(_v, 6, 0, currVal_4, currVal_5); }); }
+    } return ad; }, null, null)), i1.ɵdid(7, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(-1, null, ["Customers"])), (_l()(), i1.ɵeld(9, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), i1.ɵdid(10, 212992, null, 0, i2.RouterOutlet, [i2.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null), (_l()(), i1.ɵeld(11, 0, null, null, 1, "app-messages", [], null, null, null, i4.View_MessagesComponent_0, i4.RenderType_MessagesComponent)), i1.ɵdid(12, 114688, null, 0, i5.MessagesComponent, [i6.MessageService], null, null)], function (_ck, _v) { var currVal_3 = "/products"; _ck(_v, 4, 0, currVal_3); var currVal_6 = "/customers"; _ck(_v, 7, 0, currVal_6); _ck(_v, 10, 0); _ck(_v, 12, 0); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.title; _ck(_v, 1, 0, currVal_0); var currVal_1 = i1.ɵnov(_v, 4).target; var currVal_2 = i1.ɵnov(_v, 4).href; _ck(_v, 3, 0, currVal_1, currVal_2); var currVal_4 = i1.ɵnov(_v, 7).target; var currVal_5 = i1.ɵnov(_v, 7).href; _ck(_v, 6, 0, currVal_4, currVal_5); }); }
 exports.View_AppComponent_0 = View_AppComponent_0;
 function View_AppComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-root", [], null, null, null, View_AppComponent_0, RenderType_AppComponent)), i1.ɵdid(1, 49152, null, 0, i7.AppComponent, [], null, null)], null, null); }
 exports.View_AppComponent_Host_0 = View_AppComponent_Host_0;
@@ -283,32 +282,31 @@ var i0 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i1 = __webpack_require__(/*! ./app.server.module */ "./src/app/app.server.module.ts");
 var i2 = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 var i3 = __webpack_require__(/*! ../../node_modules/@angular/router/router.ngfactory */ "./node_modules/@angular/router/router.ngfactory.js");
-var i4 = __webpack_require__(/*! ./dashboard/dashboard.component.ngfactory */ "./src/app/dashboard/dashboard.component.ngfactory.js");
-var i5 = __webpack_require__(/*! ./hero-detail/hero-detail.component.ngfactory */ "./src/app/hero-detail/hero-detail.component.ngfactory.js");
-var i6 = __webpack_require__(/*! ./heroes/heroes.component.ngfactory */ "./src/app/heroes/heroes.component.ngfactory.js");
-var i7 = __webpack_require__(/*! ./customers/customers.component.ngfactory */ "./src/app/customers/customers.component.ngfactory.js");
-var i8 = __webpack_require__(/*! ./app.component.ngfactory */ "./src/app/app.component.ngfactory.js");
-var i9 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i10 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
-var i11 = __webpack_require__(/*! @angular/platform-server */ "@angular/platform-server");
-var i12 = __webpack_require__(/*! @angular/animations/browser */ "@angular/animations/browser");
-var i13 = __webpack_require__(/*! @angular/platform-browser/animations */ "@angular/platform-browser/animations");
-var i14 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
-var i15 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i16 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
+var i4 = __webpack_require__(/*! ./customers/customers.component.ngfactory */ "./src/app/customers/customers.component.ngfactory.js");
+var i5 = __webpack_require__(/*! ./products/products.component.ngfactory */ "./src/app/products/products.component.ngfactory.js");
+var i6 = __webpack_require__(/*! ./app.component.ngfactory */ "./src/app/app.component.ngfactory.js");
+var i7 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i8 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i9 = __webpack_require__(/*! @angular/platform-server */ "@angular/platform-server");
+var i10 = __webpack_require__(/*! @angular/animations/browser */ "@angular/animations/browser");
+var i11 = __webpack_require__(/*! @angular/platform-browser/animations */ "@angular/platform-browser/animations");
+var i12 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
+var i13 = __webpack_require__(/*! @angular/router */ "@angular/router");
+var i14 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
+var i15 = __webpack_require__(/*! ./universal-interceptor */ "./src/app/universal-interceptor.ts");
+var i16 = __webpack_require__(/*! @nguniversal/express-engine/tokens */ "@nguniversal/express-engine/tokens");
 var i17 = __webpack_require__(/*! ./message.service */ "./src/app/message.service.ts");
 var i18 = __webpack_require__(/*! ./hero.service */ "./src/app/hero.service.ts");
-var i19 = __webpack_require__(/*! ./core/customer.service */ "./src/app/core/customer.service.ts");
-var i20 = __webpack_require__(/*! @angular/http */ "@angular/http");
-var i21 = __webpack_require__(/*! @angular/animations */ "@angular/animations");
-var i22 = __webpack_require__(/*! @nguniversal/module-map-ngfactory-loader */ "@nguniversal/module-map-ngfactory-loader");
-var i23 = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
-var i24 = __webpack_require__(/*! ./hero-detail/hero-detail.component */ "./src/app/hero-detail/hero-detail.component.ts");
-var i25 = __webpack_require__(/*! ./heroes/heroes.component */ "./src/app/heroes/heroes.component.ts");
-var i26 = __webpack_require__(/*! ./customers/customers.component */ "./src/app/customers/customers.component.ts");
-var i27 = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-var i28 = __webpack_require__(/*! ./app.module */ "./src/app/app.module.ts");
-var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.ɵEmptyOutletComponentNgFactory, i4.DashboardComponentNgFactory, i5.HeroDetailComponentNgFactory, i6.HeroesComponentNgFactory, i7.CustomersComponentNgFactory, i8.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵangular_packages_core_core_s, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i9.NgLocalization, i9.NgLocaleLocalization, [i0.LOCALE_ID, [2, i9.ɵangular_packages_common_common_a]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵangular_packages_core_core_q, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵangular_packages_core_core_r, []), i0.ɵmpd(4608, i10.DomSanitizer, i10.ɵDomSanitizerImpl, [i9.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i10.DomSanitizer]), i0.ɵmpd(4608, i10.HAMMER_GESTURE_CONFIG, i10.HammerGestureConfig, []), i0.ɵmpd(5120, i10.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p0_2, p1_0, p2_0, p2_1, p2_2, p2_3, p3_0) { return [new i10.ɵDomEventsPlugin(p0_0, p0_1, p0_2), new i10.ɵKeyEventsPlugin(p1_0), new i10.ɵHammerGesturesPlugin(p2_0, p2_1, p2_2, p2_3), new i11.ɵangular_packages_platform_server_platform_server_d(p3_0)]; }, [i9.DOCUMENT, i0.NgZone, i0.PLATFORM_ID, i9.DOCUMENT, i9.DOCUMENT, i10.HAMMER_GESTURE_CONFIG, i0.ɵConsole, [2, i10.HAMMER_LOADER], i10.DOCUMENT]), i0.ɵmpd(4608, i10.EventManager, i10.EventManager, [i10.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i10.ɵDomSharedStylesHost, i10.ɵDomSharedStylesHost, [i9.DOCUMENT]), i0.ɵmpd(4608, i10.ɵDomRendererFactory2, i10.ɵDomRendererFactory2, [i10.EventManager, i10.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i11.ɵangular_packages_platform_server_platform_server_c, i11.ɵangular_packages_platform_server_platform_server_c, [i10.DOCUMENT, [2, i10.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i10.ɵSharedStylesHost, null, [i11.ɵangular_packages_platform_server_platform_server_c]), i0.ɵmpd(4608, i11.ɵServerRendererFactory2, i11.ɵServerRendererFactory2, [i10.EventManager, i0.NgZone, i10.DOCUMENT, i10.ɵSharedStylesHost]), i0.ɵmpd(4608, i12.AnimationDriver, i12.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i12.ɵAnimationStyleNormalizer, i13.ɵangular_packages_platform_browser_animations_animations_b, []), i0.ɵmpd(4608, i12.ɵAnimationEngine, i13.ɵInjectableAnimationEngine, [i9.DOCUMENT, i12.AnimationDriver, i12.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i11.ɵangular_packages_platform_server_platform_server_a, [i11.ɵServerRendererFactory2, i12.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i14.ɵangular_packages_forms_forms_j, i14.ɵangular_packages_forms_forms_j, []), i0.ɵmpd(5120, i15.ActivatedRoute, i15.ɵangular_packages_router_router_g, [i15.Router]), i0.ɵmpd(4608, i15.NoPreloading, i15.NoPreloading, []), i0.ɵmpd(6144, i15.PreloadingStrategy, null, [i15.NoPreloading]), i0.ɵmpd(135680, i15.RouterPreloader, i15.RouterPreloader, [i15.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i15.PreloadingStrategy]), i0.ɵmpd(4608, i15.PreloadAllModules, i15.PreloadAllModules, []), i0.ɵmpd(4608, i9.ViewportScroller, i9.ɵNullViewportScroller, []), i0.ɵmpd(5120, i15.ɵangular_packages_router_router_n, i15.ɵangular_packages_router_router_c, [i15.Router, i9.ViewportScroller, i15.ROUTER_CONFIGURATION]), i0.ɵmpd(5120, i15.ROUTER_INITIALIZER, i15.ɵangular_packages_router_router_j, [i15.ɵangular_packages_router_router_h]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i15.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i16.HttpXsrfTokenExtractor, i16.ɵangular_packages_common_http_http_g, [i9.DOCUMENT, i0.PLATFORM_ID, i16.ɵangular_packages_common_http_http_e]), i0.ɵmpd(4608, i16.ɵangular_packages_common_http_http_h, i16.ɵangular_packages_common_http_http_h, [i16.HttpXsrfTokenExtractor, i16.ɵangular_packages_common_http_http_f]), i0.ɵmpd(5120, i16.HTTP_INTERCEPTORS, function (p0_0) { return [p0_0]; }, [i16.ɵangular_packages_common_http_http_h]), i0.ɵmpd(4608, i16.XhrFactory, i11.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i16.HttpXhrBackend, i16.HttpXhrBackend, [i16.XhrFactory]), i0.ɵmpd(6144, i16.HttpBackend, null, [i16.HttpXhrBackend]), i0.ɵmpd(5120, i16.HttpHandler, i11.ɵangular_packages_platform_server_platform_server_h, [i16.HttpBackend, i0.Injector]), i0.ɵmpd(4608, i16.HttpClient, i16.HttpClient, [i16.HttpHandler]), i0.ɵmpd(4608, i16.ɵangular_packages_common_http_http_d, i16.ɵangular_packages_common_http_http_d, []), i0.ɵmpd(4608, i10.TransferState, i10.TransferState, []), i0.ɵmpd(5120, i11.BEFORE_APP_SERIALIZED, function (p0_0, p0_1, p0_2) { return [i11.ɵangular_packages_platform_server_platform_server_b(p0_0, p0_1, p0_2)]; }, [i10.DOCUMENT, i0.APP_ID, i10.TransferState]), i0.ɵmpd(4608, i17.MessageService, i17.MessageService, []), i0.ɵmpd(4608, i18.HeroService, i18.HeroService, [i16.HttpClient, i17.MessageService, [2, i9.APP_BASE_HREF]]), i0.ɵmpd(4608, i19.CustomerService, i19.CustomerService, [i10.TransferState, i16.HttpClient, [2, i9.APP_BASE_HREF]]), i0.ɵmpd(4608, i20.BrowserXhr, i11.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i20.ResponseOptions, i20.BaseResponseOptions, []), i0.ɵmpd(4608, i20.XSRFStrategy, i11.ɵangular_packages_platform_server_platform_server_f, []), i0.ɵmpd(4608, i20.XHRBackend, i20.XHRBackend, [i20.BrowserXhr, i20.ResponseOptions, i20.XSRFStrategy]), i0.ɵmpd(4608, i20.RequestOptions, i20.BaseRequestOptions, []), i0.ɵmpd(5120, i20.Http, i11.ɵangular_packages_platform_server_platform_server_g, [i20.XHRBackend, i20.RequestOptions]), i0.ɵmpd(4608, i21.AnimationBuilder, i13.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i10.DOCUMENT]), i0.ɵmpd(1073742336, i9.CommonModule, i9.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i10.ɵangular_packages_platform_browser_platform_browser_a, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i15.ɵangular_packages_router_router_b()]; }, []), i0.ɵmpd(512, i15.ɵangular_packages_router_router_h, i15.ɵangular_packages_router_router_h, [i0.Injector]), i0.ɵmpd(256, i0.APP_ID, "tour-of-heroes", []), i0.ɵmpd(2048, i10.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p2_0, p2_1, p2_2) { return [i10.ɵangular_packages_platform_browser_platform_browser_j(p0_0), i15.ɵangular_packages_router_router_i(p1_0), i10.ɵangular_packages_platform_browser_platform_browser_h(p2_0, p2_1, p2_2)]; }, [[2, i0.NgProbeToken], i15.ɵangular_packages_router_router_h, i10.ɵTRANSITION_ID, i9.DOCUMENT, i0.Injector]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(1073742336, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(1073742336, i10.BrowserModule, i10.BrowserModule, [[3, i10.BrowserModule]]), i0.ɵmpd(1073742336, i14.ɵangular_packages_forms_forms_bc, i14.ɵangular_packages_forms_forms_bc, []), i0.ɵmpd(1073742336, i14.FormsModule, i14.FormsModule, []), i0.ɵmpd(1024, i15.ɵangular_packages_router_router_a, i15.ɵangular_packages_router_router_e, [[3, i15.Router]]), i0.ɵmpd(512, i15.UrlSerializer, i15.DefaultUrlSerializer, []), i0.ɵmpd(512, i15.ChildrenOutletContexts, i15.ChildrenOutletContexts, []), i0.ɵmpd(256, i15.ROUTER_CONFIGURATION, {}, []), i0.ɵmpd(1024, i9.LocationStrategy, i15.ɵangular_packages_router_router_d, [i9.PlatformLocation, [2, i9.APP_BASE_HREF], i15.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i9.Location, i9.Location, [i9.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i22.ModuleMapNgFactoryLoader, [i0.Compiler, i22.MODULE_MAP]), i0.ɵmpd(1024, i15.ROUTES, function () { return [[{ path: "", redirectTo: "/dashboard", pathMatch: "full" }, { path: "dashboard", component: i23.DashboardComponent }, { path: "detail/:id", component: i24.HeroDetailComponent }, { path: "heroes", component: i25.HeroesComponent }, { path: "customers", component: i26.CustomersComponent }]]; }, []), i0.ɵmpd(1024, i15.Router, i15.ɵangular_packages_router_router_f, [i0.ApplicationRef, i15.UrlSerializer, i15.ChildrenOutletContexts, i9.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i15.ROUTES, i15.ROUTER_CONFIGURATION, [2, i15.UrlHandlingStrategy], [2, i15.RouteReuseStrategy]]), i0.ɵmpd(1073742336, i15.RouterModule, i15.RouterModule, [[2, i15.ɵangular_packages_router_router_a], [2, i15.Router]]), i0.ɵmpd(1073742336, i27.AppRoutingModule, i27.AppRoutingModule, []), i0.ɵmpd(1073742336, i16.HttpClientXsrfModule, i16.HttpClientXsrfModule, []), i0.ɵmpd(1073742336, i16.HttpClientModule, i16.HttpClientModule, []), i0.ɵmpd(1073742336, i11.ServerTransferStateModule, i11.ServerTransferStateModule, []), i0.ɵmpd(1073742336, i28.AppModule, i28.AppModule, [i0.PLATFORM_ID, i0.APP_ID]), i0.ɵmpd(1073742336, i20.HttpModule, i20.HttpModule, []), i0.ɵmpd(1073742336, i13.NoopAnimationsModule, i13.NoopAnimationsModule, []), i0.ɵmpd(1073742336, i11.ServerModule, i11.ServerModule, []), i0.ɵmpd(1073742336, i22.ModuleMapLoaderModule, i22.ModuleMapLoaderModule, []), i0.ɵmpd(1073742336, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i0.ɵAPP_ROOT, true, []), i0.ɵmpd(256, i16.ɵangular_packages_common_http_http_e, "XSRF-TOKEN", []), i0.ɵmpd(256, i16.ɵangular_packages_common_http_http_f, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i13.ANIMATION_MODULE_TYPE, "NoopAnimations", [])]); });
+var i19 = __webpack_require__(/*! ./services/customer.service */ "./src/app/services/customer.service.ts");
+var i20 = __webpack_require__(/*! ./services/products.service */ "./src/app/services/products.service.ts");
+var i21 = __webpack_require__(/*! @angular/http */ "@angular/http");
+var i22 = __webpack_require__(/*! @angular/animations */ "@angular/animations");
+var i23 = __webpack_require__(/*! @nguniversal/module-map-ngfactory-loader */ "@nguniversal/module-map-ngfactory-loader");
+var i24 = __webpack_require__(/*! ./customers/customers.component */ "./src/app/customers/customers.component.ts");
+var i25 = __webpack_require__(/*! ./products/products.component */ "./src/app/products/products.component.ts");
+var i26 = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+var i27 = __webpack_require__(/*! ./app.module */ "./src/app/app.module.ts");
+var AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) { return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.ɵEmptyOutletComponentNgFactory, i4.CustomersComponentNgFactory, i5.ProductsComponentNgFactory, i6.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵangular_packages_core_core_s, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i7.NgLocalization, i7.NgLocaleLocalization, [i0.LOCALE_ID, [2, i7.ɵangular_packages_common_common_a]]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵangular_packages_core_core_q, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵangular_packages_core_core_r, []), i0.ɵmpd(4608, i8.DomSanitizer, i8.ɵDomSanitizerImpl, [i7.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i8.DomSanitizer]), i0.ɵmpd(4608, i8.HAMMER_GESTURE_CONFIG, i8.HammerGestureConfig, []), i0.ɵmpd(5120, i8.EVENT_MANAGER_PLUGINS, function (p0_0, p0_1, p0_2, p1_0, p2_0, p2_1, p2_2, p2_3, p3_0) { return [new i8.ɵDomEventsPlugin(p0_0, p0_1, p0_2), new i8.ɵKeyEventsPlugin(p1_0), new i8.ɵHammerGesturesPlugin(p2_0, p2_1, p2_2, p2_3), new i9.ɵangular_packages_platform_server_platform_server_d(p3_0)]; }, [i7.DOCUMENT, i0.NgZone, i0.PLATFORM_ID, i7.DOCUMENT, i7.DOCUMENT, i8.HAMMER_GESTURE_CONFIG, i0.ɵConsole, [2, i8.HAMMER_LOADER], i8.DOCUMENT]), i0.ɵmpd(4608, i8.EventManager, i8.EventManager, [i8.EVENT_MANAGER_PLUGINS, i0.NgZone]), i0.ɵmpd(135680, i8.ɵDomSharedStylesHost, i8.ɵDomSharedStylesHost, [i7.DOCUMENT]), i0.ɵmpd(4608, i8.ɵDomRendererFactory2, i8.ɵDomRendererFactory2, [i8.EventManager, i8.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i9.ɵangular_packages_platform_server_platform_server_c, i9.ɵangular_packages_platform_server_platform_server_c, [i8.DOCUMENT, [2, i8.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i8.ɵSharedStylesHost, null, [i9.ɵangular_packages_platform_server_platform_server_c]), i0.ɵmpd(4608, i9.ɵServerRendererFactory2, i9.ɵServerRendererFactory2, [i8.EventManager, i0.NgZone, i8.DOCUMENT, i8.ɵSharedStylesHost]), i0.ɵmpd(4608, i10.AnimationDriver, i10.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i10.ɵAnimationStyleNormalizer, i11.ɵangular_packages_platform_browser_animations_animations_b, []), i0.ɵmpd(4608, i10.ɵAnimationEngine, i11.ɵInjectableAnimationEngine, [i7.DOCUMENT, i10.AnimationDriver, i10.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i9.ɵangular_packages_platform_server_platform_server_a, [i9.ɵServerRendererFactory2, i10.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i12.ɵangular_packages_forms_forms_j, i12.ɵangular_packages_forms_forms_j, []), i0.ɵmpd(5120, i13.ActivatedRoute, i13.ɵangular_packages_router_router_g, [i13.Router]), i0.ɵmpd(4608, i13.NoPreloading, i13.NoPreloading, []), i0.ɵmpd(6144, i13.PreloadingStrategy, null, [i13.NoPreloading]), i0.ɵmpd(135680, i13.RouterPreloader, i13.RouterPreloader, [i13.Router, i0.NgModuleFactoryLoader, i0.Compiler, i0.Injector, i13.PreloadingStrategy]), i0.ɵmpd(4608, i13.PreloadAllModules, i13.PreloadAllModules, []), i0.ɵmpd(4608, i7.ViewportScroller, i7.ɵNullViewportScroller, []), i0.ɵmpd(5120, i13.ɵangular_packages_router_router_n, i13.ɵangular_packages_router_router_c, [i13.Router, i7.ViewportScroller, i13.ROUTER_CONFIGURATION]), i0.ɵmpd(5120, i13.ROUTER_INITIALIZER, i13.ɵangular_packages_router_router_j, [i13.ɵangular_packages_router_router_h]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) { return [p0_0]; }, [i13.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i14.HttpXsrfTokenExtractor, i14.ɵangular_packages_common_http_http_g, [i7.DOCUMENT, i0.PLATFORM_ID, i14.ɵangular_packages_common_http_http_e]), i0.ɵmpd(4608, i14.ɵangular_packages_common_http_http_h, i14.ɵangular_packages_common_http_http_h, [i14.HttpXsrfTokenExtractor, i14.ɵangular_packages_common_http_http_f]), i0.ɵmpd(5120, i14.HTTP_INTERCEPTORS, function (p0_0, p1_0) { return [p0_0, new i15.UniversalInterceptor(p1_0)]; }, [i14.ɵangular_packages_common_http_http_h, [2, i16.REQUEST]]), i0.ɵmpd(4608, i14.XhrFactory, i9.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i14.HttpXhrBackend, i14.HttpXhrBackend, [i14.XhrFactory]), i0.ɵmpd(6144, i14.HttpBackend, null, [i14.HttpXhrBackend]), i0.ɵmpd(5120, i14.HttpHandler, i9.ɵangular_packages_platform_server_platform_server_h, [i14.HttpBackend, i0.Injector]), i0.ɵmpd(4608, i14.HttpClient, i14.HttpClient, [i14.HttpHandler]), i0.ɵmpd(4608, i14.ɵangular_packages_common_http_http_d, i14.ɵangular_packages_common_http_http_d, []), i0.ɵmpd(4608, i8.TransferState, i8.TransferState, []), i0.ɵmpd(5120, i9.BEFORE_APP_SERIALIZED, function (p0_0, p0_1, p0_2) { return [i9.ɵangular_packages_platform_server_platform_server_b(p0_0, p0_1, p0_2)]; }, [i8.DOCUMENT, i0.APP_ID, i8.TransferState]), i0.ɵmpd(4608, i17.MessageService, i17.MessageService, []), i0.ɵmpd(4608, i18.HeroService, i18.HeroService, [i14.HttpClient, i17.MessageService, [2, i7.APP_BASE_HREF]]), i0.ɵmpd(4608, i19.CustomerService, i19.CustomerService, [i8.TransferState, i14.HttpClient, [2, i7.APP_BASE_HREF]]), i0.ɵmpd(4608, i20.ProductsService, i20.ProductsService, []), i0.ɵmpd(4608, i21.BrowserXhr, i9.ɵangular_packages_platform_server_platform_server_e, []), i0.ɵmpd(4608, i21.ResponseOptions, i21.BaseResponseOptions, []), i0.ɵmpd(4608, i21.XSRFStrategy, i9.ɵangular_packages_platform_server_platform_server_f, []), i0.ɵmpd(4608, i21.XHRBackend, i21.XHRBackend, [i21.BrowserXhr, i21.ResponseOptions, i21.XSRFStrategy]), i0.ɵmpd(4608, i21.RequestOptions, i21.BaseRequestOptions, []), i0.ɵmpd(5120, i21.Http, i9.ɵangular_packages_platform_server_platform_server_g, [i21.XHRBackend, i21.RequestOptions]), i0.ɵmpd(4608, i22.AnimationBuilder, i11.ɵBrowserAnimationBuilder, [i0.RendererFactory2, i8.DOCUMENT]), i0.ɵmpd(1073742336, i7.CommonModule, i7.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i8.ɵangular_packages_platform_browser_platform_browser_a, []), i0.ɵmpd(1024, i0.NgProbeToken, function () { return [i13.ɵangular_packages_router_router_b()]; }, []), i0.ɵmpd(512, i13.ɵangular_packages_router_router_h, i13.ɵangular_packages_router_router_h, [i0.Injector]), i0.ɵmpd(256, i0.APP_ID, "tour-of-heroes", []), i0.ɵmpd(2048, i8.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p2_0, p2_1, p2_2) { return [i8.ɵangular_packages_platform_browser_platform_browser_j(p0_0), i13.ɵangular_packages_router_router_i(p1_0), i8.ɵangular_packages_platform_browser_platform_browser_h(p2_0, p2_1, p2_2)]; }, [[2, i0.NgProbeToken], i13.ɵangular_packages_router_router_h, i8.ɵTRANSITION_ID, i7.DOCUMENT, i0.Injector]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(1073742336, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(1073742336, i8.BrowserModule, i8.BrowserModule, [[3, i8.BrowserModule]]), i0.ɵmpd(1073742336, i12.ɵangular_packages_forms_forms_bc, i12.ɵangular_packages_forms_forms_bc, []), i0.ɵmpd(1073742336, i12.FormsModule, i12.FormsModule, []), i0.ɵmpd(1024, i13.ɵangular_packages_router_router_a, i13.ɵangular_packages_router_router_e, [[3, i13.Router]]), i0.ɵmpd(512, i13.UrlSerializer, i13.DefaultUrlSerializer, []), i0.ɵmpd(512, i13.ChildrenOutletContexts, i13.ChildrenOutletContexts, []), i0.ɵmpd(256, i13.ROUTER_CONFIGURATION, {}, []), i0.ɵmpd(1024, i7.LocationStrategy, i13.ɵangular_packages_router_router_d, [i7.PlatformLocation, [2, i7.APP_BASE_HREF], i13.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i7.Location, i7.Location, [i7.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i23.ModuleMapNgFactoryLoader, [i0.Compiler, i23.MODULE_MAP]), i0.ɵmpd(1024, i13.ROUTES, function () { return [[{ path: "", redirectTo: "/customers", pathMatch: "full" }, { path: "customers", component: i24.CustomersComponent }, { path: "products", component: i25.ProductsComponent }]]; }, []), i0.ɵmpd(1024, i13.Router, i13.ɵangular_packages_router_router_f, [i0.ApplicationRef, i13.UrlSerializer, i13.ChildrenOutletContexts, i7.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i13.ROUTES, i13.ROUTER_CONFIGURATION, [2, i13.UrlHandlingStrategy], [2, i13.RouteReuseStrategy]]), i0.ɵmpd(1073742336, i13.RouterModule, i13.RouterModule, [[2, i13.ɵangular_packages_router_router_a], [2, i13.Router]]), i0.ɵmpd(1073742336, i26.AppRoutingModule, i26.AppRoutingModule, []), i0.ɵmpd(1073742336, i14.HttpClientXsrfModule, i14.HttpClientXsrfModule, []), i0.ɵmpd(1073742336, i14.HttpClientModule, i14.HttpClientModule, []), i0.ɵmpd(1073742336, i9.ServerTransferStateModule, i9.ServerTransferStateModule, []), i0.ɵmpd(1073742336, i27.AppModule, i27.AppModule, [i0.PLATFORM_ID, i0.APP_ID]), i0.ɵmpd(1073742336, i21.HttpModule, i21.HttpModule, []), i0.ɵmpd(1073742336, i11.NoopAnimationsModule, i11.NoopAnimationsModule, []), i0.ɵmpd(1073742336, i9.ServerModule, i9.ServerModule, []), i0.ɵmpd(1073742336, i23.ModuleMapLoaderModule, i23.ModuleMapLoaderModule, []), i0.ɵmpd(1073742336, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i0.ɵAPP_ROOT, true, []), i0.ɵmpd(256, i14.ɵangular_packages_common_http_http_e, "XSRF-TOKEN", []), i0.ɵmpd(256, i14.ɵangular_packages_common_http_http_f, "X-XSRF-TOKEN", []), i0.ɵmpd(256, i11.ANIMATION_MODULE_TYPE, "NoopAnimations", [])]); });
 exports.AppServerModuleNgFactory = AppServerModuleNgFactory;
 
 
@@ -330,56 +328,6 @@ var AppServerModule = /** @class */ (function () {
     return AppServerModule;
 }());
 exports.AppServerModule = AppServerModule;
-
-
-/***/ }),
-
-/***/ "./src/app/core/customer.service.ts":
-/*!******************************************!*\
-  !*** ./src/app/core/customer.service.ts ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var http_1 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
-var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
-var rxjs_1 = __webpack_require__(/*! rxjs */ "rxjs");
-var operators_1 = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
-var i0 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
-var i2 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
-var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var CustomerService = /** @class */ (function () {
-    function CustomerService(transferState, http, origin) {
-        this.transferState = transferState;
-        this.http = http;
-        this.host = 'http://localhost:4000/';
-    }
-    CustomerService.prototype.getList = function () {
-        var _this = this;
-        var chacheKey = "customers-list-cache-key-";
-        var cachedData = this.transferState.get(this.cacheKey(chacheKey), null);
-        if (cachedData) {
-            return rxjs_1.of(cachedData);
-        }
-        return this.http.get(this.host + "apiii/customers").pipe(operators_1.tap(function (data) {
-            _this.transferState.set(_this.cacheKey(chacheKey), data);
-        }));
-    };
-    /**
-     * get transfer state key wrapper.
-     * @param type key name
-     */
-    CustomerService.prototype.cacheKey = function (type) {
-        return platform_browser_1.makeStateKey("" + type);
-    };
-    CustomerService.ngInjectableDef = i0.defineInjectable({ factory: function CustomerService_Factory() { return new CustomerService(i0.inject(i1.TransferState), i0.inject(i2.HttpClient), i0.inject(i3.APP_BASE_HREF, 8)); }, token: CustomerService, providedIn: "root" });
-    return CustomerService;
-}());
-exports.CustomerService = CustomerService;
 
 
 /***/ }),
@@ -426,13 +374,18 @@ var i0 = __webpack_require__(/*! ./customers.component.css.shim.ngstyle */ "./sr
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i3 = __webpack_require__(/*! ./customers.component */ "./src/app/customers/customers.component.ts");
-var i4 = __webpack_require__(/*! ../core/customer.service */ "./src/app/core/customer.service.ts");
+var i4 = __webpack_require__(/*! ../services/customer.service */ "./src/app/services/customer.service.ts");
+var i5 = __webpack_require__(/*! ../services/products.service */ "./src/app/services/products.service.ts");
 var styles_CustomersComponent = [i0.styles];
 var RenderType_CustomersComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_CustomersComponent, data: {} });
 exports.RenderType_CustomersComponent = RenderType_CustomersComponent;
-function View_CustomersComponent_0(_l) { return i1.ɵvid(2, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, [" customers works! ", "\n"])), i1.ɵpid(0, i2.JsonPipe, [])], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵunv(_v, 1, 0, i1.ɵnov(_v, 2).transform(_co.customers)); _ck(_v, 1, 0, currVal_0); }); }
+function View_CustomersComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, [" customers works! ", "\n"])), i1.ɵpid(0, i2.JsonPipe, [])], null, function (_ck, _v) { var currVal_0 = i1.ɵunv(_v, 1, 0, i1.ɵnov(_v, 2).transform(_v.context.ngIf)); _ck(_v, 1, 0, currVal_0); }); }
+function View_CustomersComponent_0(_l) { return i1.ɵvid(2, [(_l()(), i1.ɵand(16777216, null, null, 2, null, View_CustomersComponent_1)), i1.ɵdid(1, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), i1.ɵpid(131072, i2.AsyncPipe, [i1.ChangeDetectorRef]), (_l()(), i1.ɵeld(3, 0, null, null, 1, "button", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+        var pd_0 = (_co.updateProducts() !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["Update Products"]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵunv(_v, 1, 0, i1.ɵnov(_v, 2).transform(_co.customers$)); _ck(_v, 1, 0, currVal_0); }, null); }
 exports.View_CustomersComponent_0 = View_CustomersComponent_0;
-function View_CustomersComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-customers", [], null, null, null, View_CustomersComponent_0, RenderType_CustomersComponent)), i1.ɵdid(1, 114688, null, 0, i3.CustomersComponent, [i4.CustomerService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_CustomersComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-customers", [], null, null, null, View_CustomersComponent_0, RenderType_CustomersComponent)), i1.ɵdid(1, 638976, null, 0, i3.CustomersComponent, [i4.CustomerService, i5.ProductsService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_CustomersComponent_Host_0 = View_CustomersComponent_Host_0;
 var CustomersComponentNgFactory = i1.ɵccf("app-customers", i3.CustomersComponent, View_CustomersComponent_Host_0, {}, {}, []);
 exports.CustomersComponentNgFactory = CustomersComponentNgFactory;
@@ -451,349 +404,45 @@ exports.CustomersComponentNgFactory = CustomersComponentNgFactory;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var customer_service_1 = __webpack_require__(/*! ../core/customer.service */ "./src/app/core/customer.service.ts");
-var operators_1 = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
+var products_service_1 = __webpack_require__(/*! ../services/products.service */ "./src/app/services/products.service.ts");
+var customer_service_1 = __webpack_require__(/*! ../services/customer.service */ "./src/app/services/customer.service.ts");
 var CustomersComponent = /** @class */ (function () {
-    function CustomersComponent(customerService) {
+    function CustomersComponent(customerService, productsService) {
         this.customerService = customerService;
+        this.productsService = productsService;
+        this.index = 1;
     }
     CustomersComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.getList().subscribe(function (c) {
-            _this.customers = c;
-        });
+        this.customers$ = this.getList();
+        // console.log(">>>>haha"); 
     };
     CustomersComponent.prototype.getList = function () {
-        return this.customerService.getList().pipe(operators_1.tap(function (x) {
-            console.log(">>>>>>>>>>>>>>xxx", x);
-        }));
+        // console.log("I'm called");
+        return this.customerService.getList();
+    };
+    CustomersComponent.prototype.updateProducts = function () {
+        var newProducts = [
+            {
+                'name': 'Plexus Slim' + this.index,
+                'desc': 'I\'m a good product'
+            },
+            {
+                'name': 'Plexus MetaBurn' + this.index,
+                'desc': 'I\'m a good product'
+            },
+            {
+                'name': 'Plexus Lean' + this.index,
+                'desc': 'I\'m a good product'
+            }
+        ];
+        this.productsService.updateProducts(newProducts);
+    };
+    CustomersComponent.prototype.ngOnChanges = function (value) {
+        console.log('>>changes', value);
     };
     return CustomersComponent;
 }());
 exports.CustomersComponent = CustomersComponent;
-
-
-/***/ }),
-
-/***/ "./src/app/dashboard/dashboard.component.css.shim.ngstyle.js":
-/*!*******************************************************************!*\
-  !*** ./src/app/dashboard/dashboard.component.css.shim.ngstyle.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-Object.defineProperty(exports, "__esModule", { value: true });
-var styles = ["[class*='col-'][_ngcontent-%COMP%] {\n  float: left;\n  padding-right: 20px;\n  padding-bottom: 20px;\n}\n[class*='col-'][_ngcontent-%COMP%]:last-of-type {\n  padding-right: 0;\n}\na[_ngcontent-%COMP%] {\n  text-decoration: none;\n}\n*[_ngcontent-%COMP%], *[_ngcontent-%COMP%]:after, *[_ngcontent-%COMP%]:before {\n  box-sizing: border-box;\n}\nh3[_ngcontent-%COMP%] {\n  text-align: center;\n  margin-bottom: 0;\n}\nh4[_ngcontent-%COMP%] {\n  position: relative;\n}\n.grid[_ngcontent-%COMP%] {\n  margin: 0;\n}\n.col-1-4[_ngcontent-%COMP%] {\n  width: 25%;\n}\n.module[_ngcontent-%COMP%] {\n  padding: 20px;\n  text-align: center;\n  color: #eee;\n  max-height: 120px;\n  min-width: 120px;\n  background-color: #607D8B;\n  border-radius: 2px;\n}\n.module[_ngcontent-%COMP%]:hover {\n  background-color: #EEE;\n  cursor: pointer;\n  color: #607d8b;\n}\n.grid-pad[_ngcontent-%COMP%] {\n  padding: 10px 0;\n}\n.grid-pad[_ngcontent-%COMP%]    > [class*='col-'][_ngcontent-%COMP%]:last-of-type {\n  padding-right: 20px;\n}\n@media (max-width: 600px) {\n  .module[_ngcontent-%COMP%] {\n    font-size: 10px;\n    max-height: 75px; }\n}\n@media (max-width: 1024px) {\n  .grid[_ngcontent-%COMP%] {\n    margin: 0;\n  }\n  .module[_ngcontent-%COMP%] {\n    min-width: 60px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDRDQUE0QztBQUM1QztFQUNFLFdBQVc7RUFDWCxtQkFBbUI7RUFDbkIsb0JBQW9CO0FBQ3RCO0FBQ0E7RUFDRSxnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBO0VBR0Usc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLFNBQVM7QUFDWDtBQUNBO0VBQ0UsVUFBVTtBQUNaO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLHlCQUF5QjtFQUN6QixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLHNCQUFzQjtFQUN0QixlQUFlO0VBQ2YsY0FBYztBQUNoQjtBQUNBO0VBQ0UsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRTtJQUNFLGVBQWU7SUFDZixnQkFBZ0IsRUFBRTtBQUN0QjtBQUNBO0VBQ0U7SUFDRSxTQUFTO0VBQ1g7RUFDQTtJQUNFLGVBQWU7RUFDakI7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIERhc2hib2FyZENvbXBvbmVudCdzIHByaXZhdGUgQ1NTIHN0eWxlcyAqL1xuW2NsYXNzKj0nY29sLSddIHtcbiAgZmxvYXQ6IGxlZnQ7XG4gIHBhZGRpbmctcmlnaHQ6IDIwcHg7XG4gIHBhZGRpbmctYm90dG9tOiAyMHB4O1xufVxuW2NsYXNzKj0nY29sLSddOmxhc3Qtb2YtdHlwZSB7XG4gIHBhZGRpbmctcmlnaHQ6IDA7XG59XG5hIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuKiwgKjphZnRlciwgKjpiZWZvcmUge1xuICAtd2Via2l0LWJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIC1tb3otYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cbmgzIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAwO1xufVxuaDQge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4uZ3JpZCB7XG4gIG1hcmdpbjogMDtcbn1cbi5jb2wtMS00IHtcbiAgd2lkdGg6IDI1JTtcbn1cbi5tb2R1bGUge1xuICBwYWRkaW5nOiAyMHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiAjZWVlO1xuICBtYXgtaGVpZ2h0OiAxMjBweDtcbiAgbWluLXdpZHRoOiAxMjBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzYwN0Q4QjtcbiAgYm9yZGVyLXJhZGl1czogMnB4O1xufVxuLm1vZHVsZTpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNFRUU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgY29sb3I6ICM2MDdkOGI7XG59XG4uZ3JpZC1wYWQge1xuICBwYWRkaW5nOiAxMHB4IDA7XG59XG4uZ3JpZC1wYWQgPiBbY2xhc3MqPSdjb2wtJ106bGFzdC1vZi10eXBlIHtcbiAgcGFkZGluZy1yaWdodDogMjBweDtcbn1cbkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkge1xuICAubW9kdWxlIHtcbiAgICBmb250LXNpemU6IDEwcHg7XG4gICAgbWF4LWhlaWdodDogNzVweDsgfVxufVxuQG1lZGlhIChtYXgtd2lkdGg6IDEwMjRweCkge1xuICAuZ3JpZCB7XG4gICAgbWFyZ2luOiAwO1xuICB9XG4gIC5tb2R1bGUge1xuICAgIG1pbi13aWR0aDogNjBweDtcbiAgfVxufVxuIl19 */"];
-exports.styles = styles;
-
-
-/***/ }),
-
-/***/ "./src/app/dashboard/dashboard.component.ngfactory.js":
-/*!************************************************************!*\
-  !*** ./src/app/dashboard/dashboard.component.ngfactory.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-Object.defineProperty(exports, "__esModule", { value: true });
-var i0 = __webpack_require__(/*! ./dashboard.component.css.shim.ngstyle */ "./src/app/dashboard/dashboard.component.css.shim.ngstyle.js");
-var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i4 = __webpack_require__(/*! ../hero-search/hero-search.component.ngfactory */ "./src/app/hero-search/hero-search.component.ngfactory.js");
-var i5 = __webpack_require__(/*! ../hero-search/hero-search.component */ "./src/app/hero-search/hero-search.component.ts");
-var i6 = __webpack_require__(/*! ../hero.service */ "./src/app/hero.service.ts");
-var i7 = __webpack_require__(/*! ./dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
-var styles_DashboardComponent = [i0.styles];
-var RenderType_DashboardComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_DashboardComponent, data: {} });
-exports.RenderType_DashboardComponent = RenderType_DashboardComponent;
-function View_DashboardComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "a", [["class", "col-1-4"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 1).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(1, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "module hero"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "/detail/", _v.context.$implicit.id, ""); _ck(_v, 1, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 1).target; var currVal_1 = i1.ɵnov(_v, 1).href; _ck(_v, 0, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.name; _ck(_v, 4, 0, currVal_3); }); }
-function View_DashboardComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Top Heroes"])), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "grid grid-pad"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_DashboardComponent_1)), i1.ɵdid(4, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 1, "hero-search", [], null, null, null, i4.View_HeroSearchComponent_0, i4.RenderType_HeroSearchComponent)), i1.ɵdid(6, 114688, null, 0, i5.HeroSearchComponent, [i6.HeroService], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.heroes; _ck(_v, 4, 0, currVal_0); _ck(_v, 6, 0); }, null); }
-exports.View_DashboardComponent_0 = View_DashboardComponent_0;
-function View_DashboardComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-dashboard", [], null, null, null, View_DashboardComponent_0, RenderType_DashboardComponent)), i1.ɵdid(1, 114688, null, 0, i7.DashboardComponent, [i6.HeroService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-exports.View_DashboardComponent_Host_0 = View_DashboardComponent_Host_0;
-var DashboardComponentNgFactory = i1.ɵccf("app-dashboard", i7.DashboardComponent, View_DashboardComponent_Host_0, {}, {}, []);
-exports.DashboardComponentNgFactory = DashboardComponentNgFactory;
-
-
-/***/ }),
-
-/***/ "./src/app/dashboard/dashboard.component.ts":
-/*!**************************************************!*\
-  !*** ./src/app/dashboard/dashboard.component.ts ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var hero_service_1 = __webpack_require__(/*! ../hero.service */ "./src/app/hero.service.ts");
-var DashboardComponent = /** @class */ (function () {
-    function DashboardComponent(heroService) {
-        this.heroService = heroService;
-        this.heroes = [];
-    }
-    DashboardComponent.prototype.ngOnInit = function () {
-        this.getHeroes();
-    };
-    DashboardComponent.prototype.getHeroes = function () {
-        var _this = this;
-        this.heroService.getHeroes()
-            .subscribe(function (heroes) { return _this.heroes = heroes.slice(1, 5); });
-    };
-    return DashboardComponent;
-}());
-exports.DashboardComponent = DashboardComponent;
-
-
-/***/ }),
-
-/***/ "./src/app/hero-detail/hero-detail.component.css.shim.ngstyle.js":
-/*!***********************************************************************!*\
-  !*** ./src/app/hero-detail/hero-detail.component.css.shim.ngstyle.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-Object.defineProperty(exports, "__esModule", { value: true });
-var styles = ["label[_ngcontent-%COMP%] {\n  display: inline-block;\n  width: 3em;\n  margin: .5em 0;\n  color: #607D8B;\n  font-weight: bold;\n}\ninput[_ngcontent-%COMP%] {\n  height: 2em;\n  font-size: 1em;\n  padding-left: .4em;\n}\nbutton[_ngcontent-%COMP%] {\n  margin-top: 20px;\n  font-family: Arial;\n  background-color: #eee;\n  border: none;\n  padding: 5px 10px;\n  border-radius: 4px;\n  cursor: pointer;\n  cursor: hand;\n}\nbutton[_ngcontent-%COMP%]:hover {\n  background-color: #cfd8dc;\n}\nbutton[_ngcontent-%COMP%]:disabled {\n  background-color: #eee;\n  color: #ccc;\n  cursor: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVyby1kZXRhaWwvaGVyby1kZXRhaWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw2Q0FBNkM7QUFDN0M7RUFDRSxxQkFBcUI7RUFDckIsVUFBVTtFQUNWLGNBQWM7RUFDZCxjQUFjO0VBQ2QsaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsY0FBYztFQUNkLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixzQkFBc0I7RUFDdEIsWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLFlBQVk7QUFDZDtBQUNBO0VBQ0UseUJBQXlCO0FBQzNCO0FBQ0E7RUFDRSxzQkFBc0I7RUFDdEIsV0FBVztFQUNYLFlBQVk7QUFDZCIsImZpbGUiOiJzcmMvYXBwL2hlcm8tZGV0YWlsL2hlcm8tZGV0YWlsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBIZXJvRGV0YWlsQ29tcG9uZW50J3MgcHJpdmF0ZSBDU1Mgc3R5bGVzICovXG5sYWJlbCB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgd2lkdGg6IDNlbTtcbiAgbWFyZ2luOiAuNWVtIDA7XG4gIGNvbG9yOiAjNjA3RDhCO1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cbmlucHV0IHtcbiAgaGVpZ2h0OiAyZW07XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBwYWRkaW5nLWxlZnQ6IC40ZW07XG59XG5idXR0b24ge1xuICBtYXJnaW4tdG9wOiAyMHB4O1xuICBmb250LWZhbWlseTogQXJpYWw7XG4gIGJhY2tncm91bmQtY29sb3I6ICNlZWU7XG4gIGJvcmRlcjogbm9uZTtcbiAgcGFkZGluZzogNXB4IDEwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBjdXJzb3I6IGhhbmQ7XG59XG5idXR0b246aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjY2ZkOGRjO1xufVxuYnV0dG9uOmRpc2FibGVkIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2VlZTtcbiAgY29sb3I6ICNjY2M7XG4gIGN1cnNvcjogYXV0bztcbn1cbiJdfQ== */"];
-exports.styles = styles;
-
-
-/***/ }),
-
-/***/ "./src/app/hero-detail/hero-detail.component.ngfactory.js":
-/*!****************************************************************!*\
-  !*** ./src/app/hero-detail/hero-detail.component.ngfactory.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-Object.defineProperty(exports, "__esModule", { value: true });
-var i0 = __webpack_require__(/*! ./hero-detail.component.css.shim.ngstyle */ "./src/app/hero-detail/hero-detail.component.css.shim.ngstyle.js");
-var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! @angular/forms */ "@angular/forms");
-var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i4 = __webpack_require__(/*! ./hero-detail.component */ "./src/app/hero-detail/hero-detail.component.ts");
-var i5 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i6 = __webpack_require__(/*! ../hero.service */ "./src/app/hero.service.ts");
-var styles_HeroDetailComponent = [i0.styles];
-var RenderType_HeroDetailComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HeroDetailComponent, data: {} });
-exports.RenderType_HeroDetailComponent = RenderType_HeroDetailComponent;
-function View_HeroDetailComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 20, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", " Details"])), i1.ɵppd(3, 1), (_l()(), i1.ɵeld(4, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["id: "])), (_l()(), i1.ɵted(7, null, ["", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 8, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 7, "label", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["name: "])), (_l()(), i1.ɵeld(11, 0, null, null, 5, "input", [["placeholder", "name"]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "input"], [null, "blur"], [null, "compositionstart"], [null, "compositionend"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 12)._handleInput($event.target.value) !== false);
-        ad = (pd_0 && ad);
-    } if (("blur" === en)) {
-        var pd_1 = (i1.ɵnov(_v, 12).onTouched() !== false);
-        ad = (pd_1 && ad);
-    } if (("compositionstart" === en)) {
-        var pd_2 = (i1.ɵnov(_v, 12)._compositionStart() !== false);
-        ad = (pd_2 && ad);
-    } if (("compositionend" === en)) {
-        var pd_3 = (i1.ɵnov(_v, 12)._compositionEnd($event.target.value) !== false);
-        ad = (pd_3 && ad);
-    } if (("ngModelChange" === en)) {
-        var pd_4 = ((_co.hero.name = $event) !== false);
-        ad = (pd_4 && ad);
-    } return ad; }, null, null)), i1.ɵdid(12, 16384, null, 0, i2.DefaultValueAccessor, [i1.Renderer2, i1.ElementRef, [2, i2.COMPOSITION_BUFFER_MODE]], null, null), i1.ɵprd(1024, null, i2.NG_VALUE_ACCESSOR, function (p0_0) { return [p0_0]; }, [i2.DefaultValueAccessor]), i1.ɵdid(14, 671744, null, 0, i2.NgModel, [[8, null], [8, null], [8, null], [6, i2.NG_VALUE_ACCESSOR]], { model: [0, "model"] }, { update: "ngModelChange" }), i1.ɵprd(2048, null, i2.NgControl, null, [i2.NgModel]), i1.ɵdid(16, 16384, null, 0, i2.NgControlStatus, [[4, i2.NgControl]], null, null), (_l()(), i1.ɵeld(17, 0, null, null, 1, "button", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.goBack() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["go back"])), (_l()(), i1.ɵeld(19, 0, null, null, 1, "button", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        var pd_0 = (_co.save() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["save"]))], function (_ck, _v) { var _co = _v.component; var currVal_9 = _co.hero.name; _ck(_v, 14, 0, currVal_9); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵunv(_v, 2, 0, _ck(_v, 3, 0, i1.ɵnov(_v.parent, 0), _co.hero.name)); _ck(_v, 2, 0, currVal_0); var currVal_1 = _co.hero.id; _ck(_v, 7, 0, currVal_1); var currVal_2 = i1.ɵnov(_v, 16).ngClassUntouched; var currVal_3 = i1.ɵnov(_v, 16).ngClassTouched; var currVal_4 = i1.ɵnov(_v, 16).ngClassPristine; var currVal_5 = i1.ɵnov(_v, 16).ngClassDirty; var currVal_6 = i1.ɵnov(_v, 16).ngClassValid; var currVal_7 = i1.ɵnov(_v, 16).ngClassInvalid; var currVal_8 = i1.ɵnov(_v, 16).ngClassPending; _ck(_v, 11, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8); }); }
-function View_HeroDetailComponent_0(_l) { return i1.ɵvid(0, [i1.ɵpid(0, i3.UpperCasePipe, []), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeroDetailComponent_1)), i1.ɵdid(2, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.hero; _ck(_v, 2, 0, currVal_0); }, null); }
-exports.View_HeroDetailComponent_0 = View_HeroDetailComponent_0;
-function View_HeroDetailComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-hero-detail", [], null, null, null, View_HeroDetailComponent_0, RenderType_HeroDetailComponent)), i1.ɵdid(1, 114688, null, 0, i4.HeroDetailComponent, [i5.ActivatedRoute, i6.HeroService, i3.Location], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-exports.View_HeroDetailComponent_Host_0 = View_HeroDetailComponent_Host_0;
-var HeroDetailComponentNgFactory = i1.ɵccf("app-hero-detail", i4.HeroDetailComponent, View_HeroDetailComponent_Host_0, {}, {}, []);
-exports.HeroDetailComponentNgFactory = HeroDetailComponentNgFactory;
-
-
-/***/ }),
-
-/***/ "./src/app/hero-detail/hero-detail.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/hero-detail/hero-detail.component.ts ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var router_1 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var common_1 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var hero_service_1 = __webpack_require__(/*! ../hero.service */ "./src/app/hero.service.ts");
-var HeroDetailComponent = /** @class */ (function () {
-    function HeroDetailComponent(route, heroService, location) {
-        this.route = route;
-        this.heroService = heroService;
-        this.location = location;
-    }
-    HeroDetailComponent.prototype.ngOnInit = function () {
-        this.getHero();
-    };
-    HeroDetailComponent.prototype.getHero = function () {
-        var _this = this;
-        var id = +this.route.snapshot.paramMap.get('id');
-        this.heroService.getHero(id)
-            .subscribe(function (hero) { return _this.hero = hero; });
-    };
-    HeroDetailComponent.prototype.goBack = function () {
-        this.location.back();
-    };
-    HeroDetailComponent.prototype.save = function () {
-        var _this = this;
-        this.heroService.updateHero(this.hero)
-            .subscribe(function () { return _this.goBack(); });
-    };
-    return HeroDetailComponent;
-}());
-exports.HeroDetailComponent = HeroDetailComponent;
-
-
-/***/ }),
-
-/***/ "./src/app/hero-search/hero-search.component.css.shim.ngstyle.js":
-/*!***********************************************************************!*\
-  !*** ./src/app/hero-search/hero-search.component.css.shim.ngstyle.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".search-result[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  border-bottom: 1px solid gray;\n  border-left: 1px solid gray;\n  border-right: 1px solid gray;\n  width: 195px;\n  height: 16px;\n  padding: 5px;\n  background-color: white;\n  cursor: pointer;\n  list-style-type: none;\n}\n.search-result[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  background-color: #607D8B;\n}\n.search-result[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #888;\n  display: block;\n  text-decoration: none;\n}\n.search-result[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  color: white;\n}\n.search-result[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:active {\n  color: white;\n}\n#search-box[_ngcontent-%COMP%] {\n  width: 200px;\n  height: 20px;\n}\nul.search-result[_ngcontent-%COMP%] {\n  margin-top: 0;\n  padding-left: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVyby1zZWFyY2gvaGVyby1zZWFyY2guY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4QkFBOEI7QUFDOUI7RUFDRSw2QkFBNkI7RUFDN0IsMkJBQTJCO0VBQzNCLDRCQUE0QjtFQUM1QixZQUFZO0VBQ1osWUFBWTtFQUNaLFlBQVk7RUFDWix1QkFBdUI7RUFDdkIsZUFBZTtFQUNmLHFCQUFxQjtBQUN2QjtBQUVBO0VBQ0UseUJBQXlCO0FBQzNCO0FBRUE7RUFDRSxXQUFXO0VBQ1gsY0FBYztFQUNkLHFCQUFxQjtBQUN2QjtBQUVBO0VBQ0UsWUFBWTtBQUNkO0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7QUFDQTtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7QUFHQTtFQUNFLGFBQWE7RUFDYixlQUFlO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvaGVyby1zZWFyY2gvaGVyby1zZWFyY2guY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIEhlcm9TZWFyY2ggcHJpdmF0ZSBzdHlsZXMgKi9cbi5zZWFyY2gtcmVzdWx0IGxpIHtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGdyYXk7XG4gIGJvcmRlci1sZWZ0OiAxcHggc29saWQgZ3JheTtcbiAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgZ3JheTtcbiAgd2lkdGg6IDE5NXB4O1xuICBoZWlnaHQ6IDE2cHg7XG4gIHBhZGRpbmc6IDVweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xufVxuXG4uc2VhcmNoLXJlc3VsdCBsaTpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM2MDdEOEI7XG59XG5cbi5zZWFyY2gtcmVzdWx0IGxpIGEge1xuICBjb2xvcjogIzg4ODtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuLnNlYXJjaC1yZXN1bHQgbGkgYTpob3ZlciB7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cbi5zZWFyY2gtcmVzdWx0IGxpIGE6YWN0aXZlIHtcbiAgY29sb3I6IHdoaXRlO1xufVxuI3NlYXJjaC1ib3gge1xuICB3aWR0aDogMjAwcHg7XG4gIGhlaWdodDogMjBweDtcbn1cblxuXG51bC5zZWFyY2gtcmVzdWx0IHtcbiAgbWFyZ2luLXRvcDogMDtcbiAgcGFkZGluZy1sZWZ0OiAwO1xufVxuIl19 */"];
-exports.styles = styles;
-
-
-/***/ }),
-
-/***/ "./src/app/hero-search/hero-search.component.ngfactory.js":
-/*!****************************************************************!*\
-  !*** ./src/app/hero-search/hero-search.component.ngfactory.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-Object.defineProperty(exports, "__esModule", { value: true });
-var i0 = __webpack_require__(/*! ./hero-search.component.css.shim.ngstyle */ "./src/app/hero-search/hero-search.component.css.shim.ngstyle.js");
-var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i4 = __webpack_require__(/*! ./hero-search.component */ "./src/app/hero-search/hero-search.component.ts");
-var i5 = __webpack_require__(/*! ../hero.service */ "./src/app/hero.service.ts");
-var styles_HeroSearchComponent = [i0.styles];
-var RenderType_HeroSearchComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HeroSearchComponent, data: {} });
-exports.RenderType_HeroSearchComponent = RenderType_HeroSearchComponent;
-function View_HeroSearchComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "a", [], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 2).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵted(3, null, [" ", " "]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "/detail/", _v.context.$implicit.id, ""); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.name; _ck(_v, 3, 0, currVal_3); }); }
-function View_HeroSearchComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["id", "search-component"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Hero Search"])), (_l()(), i1.ɵeld(3, 0, [["searchBox", 1]], null, 0, "input", [["id", "search-box"]], null, [[null, "input"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("input" === en)) {
-        var pd_0 = (_co.search(i1.ɵnov(_v, 3).value) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 3, "ul", [["class", "search-result"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 2, null, View_HeroSearchComponent_1)), i1.ɵdid(6, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), i1.ɵpid(131072, i3.AsyncPipe, [i1.ChangeDetectorRef])], function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵunv(_v, 6, 0, i1.ɵnov(_v, 7).transform(_co.heroes)); _ck(_v, 6, 0, currVal_0); }, null); }
-exports.View_HeroSearchComponent_0 = View_HeroSearchComponent_0;
-function View_HeroSearchComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "hero-search", [], null, null, null, View_HeroSearchComponent_0, RenderType_HeroSearchComponent)), i1.ɵdid(1, 114688, null, 0, i4.HeroSearchComponent, [i5.HeroService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-exports.View_HeroSearchComponent_Host_0 = View_HeroSearchComponent_Host_0;
-var HeroSearchComponentNgFactory = i1.ɵccf("hero-search", i4.HeroSearchComponent, View_HeroSearchComponent_Host_0, {}, {}, []);
-exports.HeroSearchComponentNgFactory = HeroSearchComponentNgFactory;
-
-
-/***/ }),
-
-/***/ "./src/app/hero-search/hero-search.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/hero-search/hero-search.component.ts ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var rxjs_1 = __webpack_require__(/*! rxjs */ "rxjs");
-var operators_1 = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
-var hero_service_1 = __webpack_require__(/*! ../hero.service */ "./src/app/hero.service.ts");
-var HeroSearchComponent = /** @class */ (function () {
-    function HeroSearchComponent(heroService) {
-        this.heroService = heroService;
-        this.searchTerms = new rxjs_1.Subject();
-    }
-    // Push a search term into the observable stream.
-    HeroSearchComponent.prototype.search = function (term) {
-        this.searchTerms.next(term);
-    };
-    HeroSearchComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.heroes = this.searchTerms.pipe(
-        // wait 300ms after each keystroke before considering the term
-        operators_1.debounceTime(300), 
-        // ignore new term if same as previous term
-        operators_1.distinctUntilChanged(), 
-        // switch to new search observable each time the term changes
-        operators_1.switchMap(function (term) { return _this.heroService.searchHeroes(term); }));
-    };
-    return HeroSearchComponent;
-}());
-exports.HeroSearchComponent = HeroSearchComponent;
 
 
 /***/ }),
@@ -898,124 +547,6 @@ var HeroService = /** @class */ (function () {
     return HeroService;
 }());
 exports.HeroService = HeroService;
-
-
-/***/ }),
-
-/***/ "./src/app/heroes/heroes.component.css.shim.ngstyle.js":
-/*!*************************************************************!*\
-  !*** ./src/app/heroes/heroes.component.css.shim.ngstyle.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".heroes[_ngcontent-%COMP%] {\n  margin: 0 0 2em 0;\n  list-style-type: none;\n  padding: 0;\n  width: 15em;\n}\n.heroes[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  position: relative;\n  cursor: pointer;\n  background-color: #EEE;\n  margin: .5em;\n  padding: .3em 0;\n  height: 1.6em;\n  border-radius: 4px;\n}\n.heroes[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover {\n  color: #607D8B;\n  background-color: #DDD;\n  left: .1em;\n}\n.heroes[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #888;\n  text-decoration: none;\n  position: relative;\n  display: block;\n  width: 250px;\n}\n.heroes[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  color:#607D8B;\n}\n.heroes[_ngcontent-%COMP%]   .badge[_ngcontent-%COMP%] {\n  display: inline-block;\n  font-size: small;\n  color: white;\n  padding: 0.8em 0.7em 0 0.7em;\n  background-color: #607D8B;\n  line-height: 1em;\n  position: relative;\n  left: -1px;\n  top: -4px;\n  height: 1.8em;\n  min-width: 16px;\n  text-align: right;\n  margin-right: .8em;\n  border-radius: 4px 0 0 4px;\n}\n.button[_ngcontent-%COMP%] {\n  background-color: #eee;\n  border: none;\n  padding: 5px 10px;\n  border-radius: 4px;\n  cursor: pointer;\n  cursor: hand;\n  font-family: Arial;\n}\nbutton[_ngcontent-%COMP%]:hover {\n  background-color: #cfd8dc;\n}\nbutton.delete[_ngcontent-%COMP%] {\n  position: relative;\n  left: 194px;\n  top: -32px;\n  background-color: gray !important;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVyb2VzL2hlcm9lcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHlDQUF5QztBQUN6QztFQUNFLGlCQUFpQjtFQUNqQixxQkFBcUI7RUFDckIsVUFBVTtFQUNWLFdBQVc7QUFDYjtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixzQkFBc0I7RUFDdEIsWUFBWTtFQUNaLGVBQWU7RUFDZixhQUFhO0VBQ2Isa0JBQWtCO0FBQ3BCO0FBRUE7RUFDRSxjQUFjO0VBQ2Qsc0JBQXNCO0VBQ3RCLFVBQVU7QUFDWjtBQUVBO0VBQ0UsV0FBVztFQUNYLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsY0FBYztFQUNkLFlBQVk7QUFDZDtBQUVBO0VBQ0UsYUFBYTtBQUNmO0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIseUJBQXlCO0VBQ3pCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLFNBQVM7RUFDVCxhQUFhO0VBQ2IsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsMEJBQTBCO0FBQzVCO0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIsWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsaUNBQWlDO0VBQ2pDLFlBQVk7QUFDZCIsImZpbGUiOiJzcmMvYXBwL2hlcm9lcy9oZXJvZXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIEhlcm9lc0NvbXBvbmVudCdzIHByaXZhdGUgQ1NTIHN0eWxlcyAqL1xuLmhlcm9lcyB7XG4gIG1hcmdpbjogMCAwIDJlbSAwO1xuICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG4gIHBhZGRpbmc6IDA7XG4gIHdpZHRoOiAxNWVtO1xufVxuLmhlcm9lcyBsaSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUVFO1xuICBtYXJnaW46IC41ZW07XG4gIHBhZGRpbmc6IC4zZW0gMDtcbiAgaGVpZ2h0OiAxLjZlbTtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xufVxuXG4uaGVyb2VzIGxpOmhvdmVyIHtcbiAgY29sb3I6ICM2MDdEOEI7XG4gIGJhY2tncm91bmQtY29sb3I6ICNEREQ7XG4gIGxlZnQ6IC4xZW07XG59XG5cbi5oZXJvZXMgYSB7XG4gIGNvbG9yOiAjODg4O1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAyNTBweDtcbn1cblxuLmhlcm9lcyBhOmhvdmVyIHtcbiAgY29sb3I6IzYwN0Q4Qjtcbn1cblxuLmhlcm9lcyAuYmFkZ2Uge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGZvbnQtc2l6ZTogc21hbGw7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZzogMC44ZW0gMC43ZW0gMCAwLjdlbTtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzYwN0Q4QjtcbiAgbGluZS1oZWlnaHQ6IDFlbTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBsZWZ0OiAtMXB4O1xuICB0b3A6IC00cHg7XG4gIGhlaWdodDogMS44ZW07XG4gIG1pbi13aWR0aDogMTZweDtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XG4gIG1hcmdpbi1yaWdodDogLjhlbTtcbiAgYm9yZGVyLXJhZGl1czogNHB4IDAgMCA0cHg7XG59XG5cbi5idXR0b24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZWVlO1xuICBib3JkZXI6IG5vbmU7XG4gIHBhZGRpbmc6IDVweCAxMHB4O1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgY3Vyc29yOiBoYW5kO1xuICBmb250LWZhbWlseTogQXJpYWw7XG59XG5cbmJ1dHRvbjpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNjZmQ4ZGM7XG59XG5cbmJ1dHRvbi5kZWxldGUge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGxlZnQ6IDE5NHB4O1xuICB0b3A6IC0zMnB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBncmF5ICFpbXBvcnRhbnQ7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuIl19 */"];
-exports.styles = styles;
-
-
-/***/ }),
-
-/***/ "./src/app/heroes/heroes.component.ngfactory.js":
-/*!******************************************************!*\
-  !*** ./src/app/heroes/heroes.component.ngfactory.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/**
- * @fileoverview This file was generated by the Angular template compiler. Do not edit.
- *
- * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
- * tslint:disable
- */ 
-Object.defineProperty(exports, "__esModule", { value: true });
-var i0 = __webpack_require__(/*! ./heroes.component.css.shim.ngstyle */ "./src/app/heroes/heroes.component.css.shim.ngstyle.js");
-var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! @angular/router */ "@angular/router");
-var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i4 = __webpack_require__(/*! ./heroes.component */ "./src/app/heroes/heroes.component.ts");
-var i5 = __webpack_require__(/*! ../hero.service */ "./src/app/hero.service.ts");
-var styles_HeroesComponent = [i0.styles];
-var RenderType_HeroesComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_HeroesComponent, data: {} });
-exports.RenderType_HeroesComponent = RenderType_HeroesComponent;
-function View_HeroesComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 4, "a", [], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 2).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), (_l()(), i1.ɵeld(3, 0, null, null, 1, "span", [["class", "badge"]], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""])), (_l()(), i1.ɵted(5, null, [" ", " "])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "button", [["class", "delete"], ["title", "delete hero"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        _co.delete(_v.context.$implicit);
-        var pd_0 = ($event.stopPropagation() !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, ["x"]))], function (_ck, _v) { var currVal_2 = i1.ɵinlineInterpolate(1, "/detail/", _v.context.$implicit.id, ""); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.id; _ck(_v, 4, 0, currVal_3); var currVal_4 = _v.context.$implicit.name; _ck(_v, 5, 0, currVal_4); }); }
-function View_HeroesComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["My Heroes"])), (_l()(), i1.ɵeld(2, 0, null, null, 5, "div", [], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "label", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Hero name: "])), (_l()(), i1.ɵeld(5, 0, [["heroName", 1]], null, 0, "input", [], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "button", [], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
-        _co.add(i1.ɵnov(_v, 5).value);
-        var pd_0 = ((i1.ɵnov(_v, 5).value = "") !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵted(-1, null, [" add "])), (_l()(), i1.ɵeld(8, 0, null, null, 2, "ul", [["class", "heroes"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_HeroesComponent_1)), i1.ɵdid(10, 278528, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.heroes; _ck(_v, 10, 0, currVal_0); }, null); }
-exports.View_HeroesComponent_0 = View_HeroesComponent_0;
-function View_HeroesComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-heroes", [], null, null, null, View_HeroesComponent_0, RenderType_HeroesComponent)), i1.ɵdid(1, 114688, null, 0, i4.HeroesComponent, [i5.HeroService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
-exports.View_HeroesComponent_Host_0 = View_HeroesComponent_Host_0;
-var HeroesComponentNgFactory = i1.ɵccf("app-heroes", i4.HeroesComponent, View_HeroesComponent_Host_0, {}, {}, []);
-exports.HeroesComponentNgFactory = HeroesComponentNgFactory;
-
-
-/***/ }),
-
-/***/ "./src/app/heroes/heroes.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/heroes/heroes.component.ts ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var hero_service_1 = __webpack_require__(/*! ../hero.service */ "./src/app/hero.service.ts");
-var HeroesComponent = /** @class */ (function () {
-    function HeroesComponent(heroService) {
-        this.heroService = heroService;
-    }
-    HeroesComponent.prototype.ngOnInit = function () {
-        this.getHeroes();
-    };
-    HeroesComponent.prototype.getHeroes = function () {
-        var _this = this;
-        this.heroService.getHeroes()
-            .subscribe(function (heroes) { return _this.heroes = heroes; });
-    };
-    HeroesComponent.prototype.add = function (name) {
-        var _this = this;
-        name = name.trim();
-        if (!name) {
-            return;
-        }
-        this.heroService.addHero(name)
-            .subscribe(function (hero) {
-            _this.heroes.push(hero);
-        });
-    };
-    HeroesComponent.prototype.delete = function (hero) {
-        var _this = this;
-        this.heroService.deleteHero(hero)
-            .subscribe(function () {
-            _this.heroes = _this.heroes.filter(function (h) { return h !== hero; });
-        });
-    };
-    return HeroesComponent;
-}());
-exports.HeroesComponent = HeroesComponent;
 
 
 /***/ }),
@@ -1129,6 +660,256 @@ var MessagesComponent = /** @class */ (function () {
     return MessagesComponent;
 }());
 exports.MessagesComponent = MessagesComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/products/products.component.css.shim.ngstyle.js":
+/*!*****************************************************************!*\
+  !*** ./src/app/products/products.component.css.shim.ngstyle.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2R1Y3RzL3Byb2R1Y3RzLmNvbXBvbmVudC5jc3MifQ== */"];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/products/products.component.ngfactory.js":
+/*!**********************************************************!*\
+  !*** ./src/app/products/products.component.ngfactory.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./products.component.css.shim.ngstyle */ "./src/app/products/products.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i3 = __webpack_require__(/*! ./products.component */ "./src/app/products/products.component.ts");
+var i4 = __webpack_require__(/*! ../services/products.service */ "./src/app/services/products.service.ts");
+var styles_ProductsComponent = [i0.styles];
+var RenderType_ProductsComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_ProductsComponent, data: {} });
+exports.RenderType_ProductsComponent = RenderType_ProductsComponent;
+function View_ProductsComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, [" ", "\n"])), i1.ɵpid(0, i2.JsonPipe, [])], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = i1.ɵunv(_v, 1, 0, i1.ɵnov(_v, 2).transform(_co.products)); _ck(_v, 1, 0, currVal_0); }); }
+function View_ProductsComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(1, null, [" I'm async pipe ", "\n"])), i1.ɵpid(0, i2.JsonPipe, [])], null, function (_ck, _v) { var currVal_0 = i1.ɵunv(_v, 1, 0, i1.ɵnov(_v, 2).transform(_v.context.ngIf)); _ck(_v, 1, 0, currVal_0); }); }
+function View_ProductsComponent_0(_l) { return i1.ɵvid(2, [(_l()(), i1.ɵted(-1, null, ["products works!\n"])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ProductsComponent_1)), i1.ɵdid(2, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 2, null, View_ProductsComponent_2)), i1.ɵdid(4, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), i1.ɵpid(131072, i2.AsyncPipe, [i1.ChangeDetectorRef])], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.products; _ck(_v, 2, 0, currVal_0); var currVal_1 = i1.ɵunv(_v, 4, 0, i1.ɵnov(_v, 5).transform(_co.products$)); _ck(_v, 4, 0, currVal_1); }, null); }
+exports.View_ProductsComponent_0 = View_ProductsComponent_0;
+function View_ProductsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-products", [], null, null, null, View_ProductsComponent_0, RenderType_ProductsComponent)), i1.ɵdid(1, 245760, null, 0, i3.ProductsComponent, [i4.ProductsService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_ProductsComponent_Host_0 = View_ProductsComponent_Host_0;
+var ProductsComponentNgFactory = i1.ɵccf("app-products", i3.ProductsComponent, View_ProductsComponent_Host_0, {}, {}, []);
+exports.ProductsComponentNgFactory = ProductsComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/products/products.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/products/products.component.ts ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var products_service_1 = __webpack_require__(/*! ../services/products.service */ "./src/app/services/products.service.ts");
+var operators_1 = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
+var ProductsComponent = /** @class */ (function () {
+    function ProductsComponent(productsService) {
+        this.productsService = productsService;
+        this.index = 1;
+        this.isComponentAlive = true;
+    }
+    ProductsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.productsService.getProducts()
+            .pipe(operators_1.takeWhile(function () { return _this.isComponentAlive; }))
+            .subscribe(function (p) {
+            console.log('>>>> I\'m Memory Leak from Product Component. inside the subscribe. 111');
+            _this.products = p;
+        });
+        this.products$ = this.productsService.getProducts()
+            .pipe(operators_1.tap(function (x) {
+            console.log('>>>> I\'m Memory Leak from Product Component. From Async Pipe');
+        }));
+    };
+    ProductsComponent.prototype.updateProducts = function () {
+        var newProducts = [
+            {
+                'name': 'Plexus Slim' + this.index,
+                'desc': 'I\'m a good product'
+            },
+            {
+                'name': 'Plexus MetaBurn' + this.index,
+                'desc': 'I\'m a good product'
+            },
+            {
+                'name': 'Plexus Lean' + this.index,
+                'desc': 'I\'m a good product'
+            }
+        ];
+        this.productsService.updateProducts(newProducts);
+    };
+    ProductsComponent.prototype.ngOnDestroy = function () {
+        this.isComponentAlive = false;
+    };
+    return ProductsComponent;
+}());
+exports.ProductsComponent = ProductsComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/services/customer.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/customer.service.ts ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var http_1 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
+var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var rxjs_1 = __webpack_require__(/*! rxjs */ "rxjs");
+var operators_1 = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
+var i0 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
+var i2 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
+var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var CustomerService = /** @class */ (function () {
+    function CustomerService(transferState, http, origin) {
+        this.transferState = transferState;
+        this.http = http;
+        // this.host = 'http://localhost:4000/';
+    }
+    CustomerService.prototype.getList = function () {
+        var _this = this;
+        var chacheKey = "customers-list-cache-key";
+        if (this.transferState.hasKey(this.cacheKey(this.cacheKey(chacheKey)))) {
+            var cachedData = this.transferState.get(this.cacheKey(chacheKey), null);
+            if (cachedData) {
+                return rxjs_1.of(cachedData);
+            }
+        }
+        return this.http.get("/api/customers").pipe(operators_1.tap(function (data) {
+            console.log('>>>> data is set', data);
+            _this.transferState.set(_this.cacheKey(chacheKey), data);
+        }));
+    };
+    /**
+     * get transfer state key wrapper.
+     * @param type key name
+     */
+    CustomerService.prototype.cacheKey = function (type) {
+        return platform_browser_1.makeStateKey("" + type);
+    };
+    CustomerService.ngInjectableDef = i0.defineInjectable({ factory: function CustomerService_Factory() { return new CustomerService(i0.inject(i1.TransferState), i0.inject(i2.HttpClient), i0.inject(i3.APP_BASE_HREF, 8)); }, token: CustomerService, providedIn: "root" });
+    return CustomerService;
+}());
+exports.CustomerService = CustomerService;
+
+
+/***/ }),
+
+/***/ "./src/app/services/products.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/products.service.ts ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var rxjs_1 = __webpack_require__(/*! rxjs */ "rxjs");
+var i0 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var ProductsService = /** @class */ (function () {
+    function ProductsService() {
+        this.products$ = new rxjs_1.ReplaySubject(1);
+        var products = [
+            {
+                'name': 'Plexus Slim',
+                'desc': 'I\'m a good product'
+            },
+            {
+                'name': 'Plexus MetaBurn',
+                'desc': 'I\'m a good product'
+            },
+            {
+                'name': 'Plexus Lean',
+                'desc': 'I\'m a good product'
+            }
+        ];
+        this.products$.next(products);
+    }
+    ProductsService.prototype.getProducts = function () {
+        return this.products$;
+    };
+    ProductsService.prototype.updateProducts = function (product) {
+        this.products$.next(product);
+    };
+    ProductsService.ngInjectableDef = i0.defineInjectable({ factory: function ProductsService_Factory() { return new ProductsService(); }, token: ProductsService, providedIn: "root" });
+    return ProductsService;
+}());
+exports.ProductsService = ProductsService;
+
+
+/***/ }),
+
+/***/ "./src/app/universal-interceptor.ts":
+/*!******************************************!*\
+  !*** ./src/app/universal-interceptor.ts ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var http_1 = __webpack_require__(/*! @angular/common/http */ "@angular/common/http");
+var express_1 = __webpack_require__(/*! express */ "express");
+var UniversalInterceptor = /** @class */ (function () {
+    function UniversalInterceptor(request) {
+        this.request = request;
+    }
+    UniversalInterceptor.prototype.intercept = function (req, next) {
+        var serverReq = req;
+        if (this.request) {
+            var newUrl = this.request.protocol + "://" + this.request.get('host');
+            if (!req.url.startsWith('/')) {
+                newUrl += '/';
+            }
+            newUrl += req.url;
+            serverReq = req.clone({ url: newUrl });
+        }
+        return next.handle(serverReq);
+    };
+    return UniversalInterceptor;
+}());
+exports.UniversalInterceptor = UniversalInterceptor;
 
 
 /***/ }),
@@ -1285,6 +1066,17 @@ module.exports = require("@angular/router");
 
 /***/ }),
 
+/***/ "@nguniversal/express-engine/tokens":
+/*!*****************************************************!*\
+  !*** external "@nguniversal/express-engine/tokens" ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@nguniversal/express-engine/tokens");
+
+/***/ }),
+
 /***/ "@nguniversal/module-map-ngfactory-loader":
 /*!***********************************************************!*\
   !*** external "@nguniversal/module-map-ngfactory-loader" ***!
@@ -1293,6 +1085,17 @@ module.exports = require("@angular/router");
 /***/ (function(module, exports) {
 
 module.exports = require("@nguniversal/module-map-ngfactory-loader");
+
+/***/ }),
+
+/***/ "express":
+/*!**************************!*\
+  !*** external "express" ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("express");
 
 /***/ }),
 

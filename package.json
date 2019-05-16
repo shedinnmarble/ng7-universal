@@ -8,11 +8,11 @@
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
-    "lint": "tslint ./src/**/*.ts -t verbose",
+    "lint": "tslint ./src/**/*.ts -t verbose --fix",
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "nodemon dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run angular.io-example:server",
+    "build:client-and-server-bundles": "ng build && ng run angular.io-example:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "keywords": [],
@@ -32,6 +32,7 @@
     "@nguniversal/express-engine": "^7.1.0",
     "@nguniversal/module-map-ngfactory-loader": "^7.1.0",
     "angular-in-memory-web-api": "github:brandonroberts/in-memory-web-api-bazel#50a34d8",
+    "codelyzer": "^5.0.1",
     "core-js": "^2.5.4",
     "rxjs": "^6.3.0",
     "zone.js": "~0.8.26"

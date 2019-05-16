@@ -1,0 +1,11 @@
+products works!
+<p *ngIf="products">
+  
+  
+  {{products | json}}
+</p>
+
+<h3 *ngIf="products$ | async as p">
+  I'm async pipe
+  {{p | json}}
+</h3>

@@ -35,7 +35,7 @@ app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
 
 // TODO: implement data requests securely
-app.get("/apiii/customers/", (req, res) =>{
+app.get("/api/customers/", (req, res) =>{
   res.json([
     {
       "firstName": "Dewei",
